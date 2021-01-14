@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+*{
+    text-transform:capitalize;
+    transition-duration:1s;
+    box-sizing:border-box;
+}
+body {
+    margin:0;
+    padding:0;
+}
+.fix{
+    position:sticky;
+    top:0;
+    height:auto;
+    background-color:none;
+    width:100%;
+}
+.more{
+    width:100%;
+    height:40px;
+}
+.more > .app_name{
+    display:flex;
+    height:40px;
+    align-items: center;
+    justify-content: center;
+    padding-left:15px;
+    font-size:25px;
+    float:left;
+}
+.more > table{
+    vertical-align:middle;
+    height:40px;
+    margin-right:0%;
+    float:right;
+    font-size:20px;
+}
+.more > table td{
+    padding:0 10px;
+}
+.location_info{
+    height:20px;
+    margin:0 auto;
+    margin-top:15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.time{
+    width:100%;
+    height:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:12px;
+    color:gray;
+}
+.temp_sun_moon{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:70px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top:20px;
+}
+#sun_moon_main{
+    height:70px;
+    width:70px;
+    display:block;
+    text-align:right;
+}
+#sun_moon_main > img{
+    width:100%;
+    margin-right:-10px;
+}
+.additional_info_top{
+    width:100%;
+    height:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:12px;
+    color:gray;
+}
+#weather_status{
+    width:100%;
+    height:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+}
+#humd_visb{
+    width:100%;
+    height:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:15px;
+}
+#humd_visb > div{
+    width:50vw;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#humd_top{
+    border-radius:15px 0 0 15px;
+    border-style:solid;
+    border-color:lightgray;
+}
+#visb_top{
+    border-radius:0 15px 15px 0px;
+    border-style:solid solid solid none;
+    border-color:lightgray;
+}
+.fa_for_humd{
+    font-size:35px;
+    float:left;
+    padding:10px;
+}
+.himd_main_top_final,.himd_main_top_final1{
+    padding:10px;
+    line-height:150%;
+    font-size:13px;
+    text-transform:none !important;
+}
+.temp_hour , .temp_hour1{
+    white-space:nowrap;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    margin-top:5px;
+}
+.hour{
+    width:85px;
+    height:auto;
+    padding:5px;
+    display:inline-block;
+    margin:5px;
+    border-radius:15px;
+    border-style:solid;
+    border-color:lightgray;
+}
+#hour_time{
+    display:flex;
+    align-items: center;
+    font-size:15px;
+    justify-content: center;
+}
+#hour_icon{
+    display:flex;
+    height:40px;
+    align-items: center;
+    justify-content: center;
+    background-color:none;
+}
+#hour_icon > img{
+    width:60px;
+}
+#hour_humd{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:12px;
+}
+#hour_temp{
+    margin-top:10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:20px;
+}
+#hour_temp_min_max{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:12px;
+    margin-top:4px;
+}
+.super_info__{
+    margin:30px auto 15px auto;
+    width:calc(100% - 10px);
+    display:grid;
+    padding:20px;
+    background-color:none;
+    border-radius:15px;
+    border-style:solid;
+    border-color:lightgray;
+}
+.super_info__ > div{
+    display:block;
+    margin-top:15px;
+}
+#super_top{
+    margin-top:0;
+}
+.alpha{
+    float:left;
+}
+.beta{
+    float:right;
+}
+/*<!--Additional templetes-->*/
+.search{
+    position:fixed;
+    height:40px;
+    width:100%;
+    background-color:none;
+    top:0;
+    left:100%;
+    background-image:url("http://openweathermap.org/img/wn/01n@2x.png");
+}
+.search::after{
+    content:" ";
+    height:40px;
+    width:100%;
+    background-color:none;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+    filter:blur(1px);
+    background-color:black;
+    opacity:0.9;
+}
+.go_back_search{
+    float:left;
+    width:20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:40px;
+    padding-left:10px;
+    font-size:25px;
+    color:white;
+}
+#city_name_in{
+    float:right;
+    width:55%;
+    height:calc(100% - 15px);
+    margin:7.5px;
+    border-radius:20px;
+    border-style:none;
+    outline:none;
+    padding:0 10px;
+}
+#search_city_second{
+    float:right;
+    width:40px;
+    height:calc(100% - 15px);
+    margin:7.5px;
+    border-radius:20px;
+    border-style:none;
+    outline:none;
+    padding:0 10px;
+    font-size:20px;
+}
+.cover_all{
+    position:fixed;
+    height:100vh;
+    width:100vw;
+    top:0;
+    left:0;
+    background-color:black;
+    transform:scale(1);
+    background-image:url("https://cutewallpaper.org/21/loading-gif-transparent-background/Loading-gif-download-free-clipart-with-a-transparent-.gif");
+    background-repeat:no-repeat;
+    background-position:50% 40%;
+    background-size:120px 120px;
+    transition-duration:0.2s;
+}
+.cover_all::after{
+    content:"Fetching";
+    position:absolute;
+    height:12px;
+    bottom:40%;
+    width:100%;
+    left:0;
+    color:white;
+    text-align:center;
+    font-size:30px;
+    letter-spacing:5px;
+    animation:animate2 2s infinite;
+}
+@keyframes animate2{
+    0%{
+        content:"Fetching";
+    }
+    25%{
+        content:"Fetching.";
+    }
+    50%{
+        content:"Fetching..";
+    }
+    75%{
+        content:"Fetching...";
+    }
+    100%{
+        content:"Fetching...";
+    }
+    
+}
+.map_location{
+    position:fixed;
+    height:100vh;
+    width:100%;
+    background-color:white;
+    color:gray;
+    top:0;
+    left:100%;
+    transition-duration:1s;
+}
+.map_location > #map_org > iframe{
+    height:97vh;
+    width:100%;
+    border-style:none;
+}
+#close_map{
+    width:100%;
+    height:7vh;
+    font-size:30px;
+    display:flex;
+    align-items: center;
+    padding:0 7px;
+    /*justify-content: center;*/
+}
+#close_map > i{
+    width:30px;
+}
+#city_name_2{
+    text-align:right;
+    width:calc(100% - 30px);
+    display:inline-block;
+    font-size:25px;
+}
+.drop{
+    height:auto;
+    width:100px;
+    position:fixed;
+    top:40px;
+    right:-100px;
+    border-radius:20px 4px 20px 4px;
+    border-style:solid;
+    border-color:gray !important;
+    transition-duration:0.3s;
+    padding:10px;
+    overflow:scroll;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.drop > div{
+    border-bottom:solid;
+    margin-bottom:5px;
+    border-color:gray;
+    border-width:0.5px;
+}
+#follow{
+    border-style:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:20px; 
+}
+li{
+    text-align:left;
+    font-family: 'Open Sans Condensed', sans-serif;
+}

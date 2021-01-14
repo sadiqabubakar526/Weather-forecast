@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/9d89bb858d.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="weather.css">
+        <title>WEATHER FORECAST |SURAJ ABUBAKAR</title>
+      
+    </head>
+    <body>
+        <div class="fix">
+            <div class="more">
+                <div class="app_name">Weather live</div>
+                <table>
+                    <tr>
+                        <td id="loc_but">
+                            Location
+                        </td>
+                        <td>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </td>
+                        <td>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="location_info">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;
+                <span id="city_name">Bauchi</span>
+            </div>
+        </div>
+        <div class="time">this is time</div>
+        <div class="temp_sun_moon">
+            <span id="sun_moon_main"></span>
+            <span id="temp_main"></span>
+            <sup><sup>°</sup></sup>
+        </div>
+        <div class="additional_info_top"></div>
+        <div id="weather_status"></div>
+        <div id="humd_visb">
+            <div id="humd_top">
+                <i class="fa fa-tint fa_for_humd" aria-hidden="true"></i>
+                <span class="himd_main_top_final">
+                    Humidity<br>44%
+                </span>
+            </div>
+            <div id="visb_top">
+                <i class="fa_for_humd" aria-hidden="true">&#127786;</i>
+                <span class="himd_main_top_final1">
+                    Wind Speed<br>44%
+                </span>
+            </div>
+        </div>
+        <div style="margin-top:25px;padding:10px">Hourly</div>
+        <div class="temp_hour"></div>
+        
+        <div style="margin-top:25px;padding:10px">Daily</div>
+        <div class="temp_hour1"></div>
+        
+        <div class="super_info__">
+            <div id="super_top">
+                <span class="alpha">Ground pressure</span>
+                <span class="beta" id="grnd_pre">73</span>
+            </div>
+            <div>
+                <span class="alpha">Sea pressure</span>
+                <span class="beta" id="sea_pre">73</span>
+            </div>
+            <div>
+                <span class="alpha">Cloud</span>
+                <span class="beta" id="cloud">63</span>
+            </div>
+            <div>
+                <span class="alpha">Visibility</span>
+                <span class="beta" id="visibility">52</span>
+            </div>
+            <div>
+                <span class="alpha">Sun Rise</span>
+                <span class="beta" id="rise_sun">61</span>
+            </div>
+            <div>
+                <span class="alpha">Sun Set</span>
+                <span class="beta" id="set_sun">62</span>
+            </div>
+        </div>
+        
+        
+        
+        <!--Additional templetes-->
+        <div class="search">
+            <div class="go_back_search">
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </div>
+            <button id="search_city_second">
+                 <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <input type="text" id="city_name_in" onkeypress="srch(event)" placeholder="City, State, Country" value="bauchi"/>
+        </div>
+        <div class="cover_all"></div>
+        <div class="drop">
+            <div id="dark_light">Dark Mode</div>
+            <div id="about">Features</div>
+            <div id="credit">Credits</div>
+            <div id="reset">Reset</div>
+            <div id="follow">
+                <a href="https://www.instagram.com/real_dulah_born?r=nametag">
+                    <img height="20px" src="https://cdn.worldvectorlogo.com/logos/sololearn-2.svg"/>
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/sadiqabubakar526">
+                    <img height="20px" 
+                        style="border-radius:20px;" src="https://cdn1.iconfinder.com/data/icons/social-media-logos-7/64/github-512.png"/>
+                </a>
+            </div>
+        </div>
+        <div class="map_location">
+            <div id="close_map">
+                <i class="fa fa-backward" aria-hidden="true"></i>
+                <span id="city_name_2">bauchi</span>
+            </div>
+            <div id="map_org">
+                <iframe frameborder="0" id="map" src="https://www.google.com/maps/embed/v1/place?q=Bauchi&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+            </div>
+        </div>
+            <script src="script.js"></script>
+    </body>
+</html>
